@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: #666;
+}
+.heading{
+    text-align: center;
+}
+</style>
+</head>
+<body style="background-image: url('{% static 'images/background1.jpg'%}'); backdrop-filter: blur(10px); z-index: -1; height: 100%; width: 100%; left: 0; top: 0; position: fixed; background-repeat: no-repeat; background-position: center; background-size: cover;">
+<h1 class="heading">Azar online library</h1>
+<nav class="navbar">
+    <ul>
+        <li><a href="/contactus">contact us</a></li>
+        <li><a href="/list">List</a></li>
+        <li style="float: left; padding-left: 0.5;"><a href="/options">Azar online library</a></li>
+        
+      </ul>
+</nav>
+
+</body>
+</html>

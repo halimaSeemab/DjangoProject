@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  </head>
+
+<body>
+
+  
+  <h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">List of Books</h1>
+
+  <ul>
+    {% csrf_token %}
+      {% for x in mybooks %}
+       <a href="details/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+        {% endfor %}
+         <button herf="/details{{ x.id }}" style=" float: left, top; background-color: gray; padding: 10px 20px; border-radius: 0.5cm; box-sizing:border-box; margin-right: 1cm;"> 
+           
+      
+      {% for x in mybooks %}
+      <li>{{ x.book }}</li>
+      {% endfor %}
+  </ul> 
+</a>
+  <ul style=>
+    {% csrf_token %}
+       {% for x in lm %}
+      <a href="details2/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+       {% endfor %}
+        <button herf="/details2{{ x.id }}" style="  float: left top; background-color: gray; padding: 10px 20px; border-radius: 0.5cm; box-sizing:border-box;   "> 
+          
+
+     
+     {% for x in lm %}
+     <li>{{ x.book }}</li>
+     {% endfor %}
+    </ul>
+  </a>
+
+
+
+    </button>
+
+  
+<ul>
+  {% for x in wh %}
+ <a href="details4/{{ x.id }}" style="--clr:hsl(234, 57%, 41%)">
+  {% endfor %}
+   <button herf="/details4{{ x.id }}" style="float: left, top; background-color: #666; padding: 10px 20px; border-radius: 0.5cm; box-sizing:border-box;"> 
+         
+    
+  {% for x in wh %}
+  <li>{{ x.book }}</li>
+  {% endfor %}
+    </ul>
+  </a>
+  
+      </button>
+
+</body>
+</html>
